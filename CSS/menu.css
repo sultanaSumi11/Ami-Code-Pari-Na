@@ -1,0 +1,46 @@
+
+       body {
+       align:center;
+       width: 70%;
+       margin: 0 auto;
+       }
+       .menurow{
+          list-style-type: none;
+          margin: 0;
+          overflow: hidden;
+          background-color: #7b8d96;
+       }
+    
+        ul {
+          padding:16px;
+          list-style-type: none;
+          margin: 0;
+          overflow: hidden;
+          background-color: #7b8d96;
+        }
+
+        li {
+          float: left;
+        }
+
+        li a {
+          color: black;
+          font-weight: bold;
+          display:block
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        li a:hover {
+          color: black;
+          background-color:#4e5e5e; 
+        }
+        li a:active {
+          color: black;
+          background-color: #ABAAA9;
+        }
+        
+
+     
+  
