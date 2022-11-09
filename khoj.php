@@ -32,18 +32,20 @@
     <?php
         //include("merge_sort.php");
         //include("binary_search.php");
-        $arr = $_POST["arr"];
-        $value = $_POST["value"];
-        $arr = explode(', ', $arr);
-        
+        if(isset($_POST['arr']))
+        {
+	          $arr = $_POST["arr"];
+            $value = $_POST["value"];
+            $arr = explode(', ', $arr);
+            sort($arr);
+            $val = array_search($value,$arr);
+            echo "Result: ";
+            if($val)   echo "True.";
+            else       echo "False.";
 
-        sort($arr);
-        $val = array_search($value,$arr);
-        echo "Result: ";
-        if($val)   echo "True.";
-        else       echo "False.";
+            print_r($arr);
 
-        print_r($arr);
+        }
     ?>
 
 
