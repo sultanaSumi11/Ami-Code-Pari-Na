@@ -38,3 +38,11 @@ CREATE TABLE `user` (
   `email` varchar(100) NOT NULL DEFAULT ''
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+
+
+CREATE TABLE `tb_data` (
+  `ID` int(11) NOT NULL,
+  `timepoint` DATETIME DEFAULT CURRENT_TIMESTAMP,
+  `arrayvalues` varchar(255) NOT NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
