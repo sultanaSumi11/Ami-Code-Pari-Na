@@ -47,6 +47,38 @@
 
         }
     ?>
+	  
+    <!--<script type="text/javascript">
+      // Prevent form from submit or refresh
+      var form = document.getElementById("myForm");
+      function handleForm(event) { event.preventDefault(); }
+      form.addEventListener('submit', handleForm);
+      // Function
+      function insert(){
+        $(document).ready(function(){
+
+          // Make an array of languages to insert multiple checkbox values of languages
+          
+
+          $.ajax({
+            // Action
+            url: 'function.php',
+            // Method
+            type: 'POST',
+            data: {
+              // Get value
+              arr: $("input[name=arr]").val(),
+              action: "insert"
+            },
+            success:function(response){
+              // Response is the output of action file
+              alert("Sorted array successfully added!");
+
+            }
+          });
+        });
+      }
+    </script> -->
 
 
 
